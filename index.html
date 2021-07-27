@@ -54,21 +54,11 @@ input[type="image"] {
   /* margin:20px auto; */
   margin-bottom: 20px;
 }
-.before{
-  height:1px;
-
-}
-.inside {
-  /* position: absolute; */
-  background: green;
-  margin-top:19px
-}
-
-p {
-  display: inline;
-  font-size: 2em;
-  color:white;
-  text-decoration: underline;
+.float {
+  float: right;
+  width:200px;
+  height:100px;
+  /* position: relative; */
 }
 @keyframes third {
 0% {
@@ -92,14 +82,13 @@ p {
 <div style="clear:both" class="">
 </div>
 
-<div class="ahla"></div>
-  <div  class="before"></div>
+
   <div style="font-size:2em;color:white;" class="inside">
     div of inside
   </div>
 <p>what</p>
     <h2>Input Data</h2>
-    <form action="#" method="POST">
+    <form class="float" action="#" method="POST">
       <label for="name">Your Experience:</label>
       <br>
       <input id="name" type="text" name="enter" value="" placeholder="your name">
